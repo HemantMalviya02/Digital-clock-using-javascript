@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Datetime/taskDigitalClock.css">
+</head>
+<body>
+    <div class="main">
+        <div class="box1" id="hour"></div>
+        <div class="box2">
+            <div class="blink1" id="dot1"></div>
+            <div class="blink2" id="dot2"></div>
+        </div>
+        <div class="box3" id="minute"></div>
+        <div class="box4">
+            <div class="blink3" id="dot3"></div>
+            <div class="blink4" id="dot4"></div>
+        </div>
+        <div class="box5" id="second"></div>
+        <div class="box6" id="val"></div>
+    </div>
+    <script>
+        i=0;
+         window.onload=()=>time();
+        function time(){
+            date = new Date();
+            hh = date.getHours();
+            if(hh>12)
+            val.innerHTML="PM";
+            else
+                val.innerHTML="AM"; 
+            mm = date.getMinutes();
+            ss = date.getSeconds();
+            hour.innerHTML=hh;
+            minute.innerHTML=mm;
+            second.innerHTML=ss;
+            setTimeout("time()",500);    
+            if(i==0)
+            {
+                dot1.classList.add("active")
+                dot2.classList.add("active")
+                dot3.classList.add("active")
+                dot4.classList.add("active")
+                i=1;
+            }else{
+                dot1.classList.remove("active")
+                dot2.classList.remove("active")
+                dot3.classList.remove("active")
+                dot4.classList.remove("active")
+                i=0;
+            }
+        }        
+    </script>
+</body>
+</html>

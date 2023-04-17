@@ -1,0 +1,87 @@
+.main{
+    background-color: black;
+    height: 200px;
+    width: 680px;
+    transform: translateY(200px);
+    margin-left: 330px;
+    border: 10px groove black;
+}
+.box1{
+    height: 100%;
+    width: 150px;
+    background-color: cadetblue;
+    float: left;
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+}
+.box2{
+    height: 100%;
+    width: 40px;
+    background-color: darkgrey;
+    float: left;
+}
+.box3{
+    height: 100%;
+    width: 150px;
+    background-color: cadetblue;
+    float: left;
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+}
+.box4{
+    height: 100%;
+    width: 40px;
+    background-color: darkgrey;
+    float: left;
+}
+.box5{
+    height: 100%;
+    width: 150px;
+    background-color: cadetblue;
+    float: left;
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+}
+.box6{
+    height: 100%;
+    width: 150px;
+    background-color: dimgray;
+    float: left;
+    font-size: 80px;
+    text-align: center;
+    line-height: 200px;
+}
+.blink1{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin: 60px 0 0 13px;
+}
+.blink2{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin: 50px 0 0 13px;
+}
+.blink3{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin: 60px 0 0 13px;
+}
+.blink4{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    margin: 60px 0 0 13px;
+}
+.active{
+    background: white;
+}
